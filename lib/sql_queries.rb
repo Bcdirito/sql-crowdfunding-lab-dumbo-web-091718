@@ -8,8 +8,8 @@
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
     "SELECT title, SUM (pledges.amount)
-    from PROJECTS
-    join PLEDGES
+    FROM projects
+    JOIN pledges
     WHERE projects.id == pledges.project_id
     ORDER BY title"
 end
@@ -33,5 +33,6 @@ end
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
    
 end
+
 
 
